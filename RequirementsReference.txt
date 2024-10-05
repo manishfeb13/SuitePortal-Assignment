@@ -1,0 +1,74 @@
+1. For Resident : POST /api/maintenance-requests :-
+
+This should write a problem of resident inside the db file.
+
+2. For Admin : GET /api/maintenance-requests
+
+This returns list of requests. Which include additional field of 'pending task'. so that we can display the data to admin which
+are remaining tasks, which are previous completed task and also if the current task is completed, admin can mark the task to be
+completed (pending:false) and it can move to the history section.
+
+3. For Admin : PUT /api/maintenance-requests/:id/close
+
+In this the admin can move the curret task to be completed. That is mark Pending : False and the task goes to history section.
+
+
+4. For Admin : POST /api/admin/register (self made):-
+
+To make and account of Admin.
+Register using - name, email, phone-no, Address-Room no., age, username, password 
+
+
+5. For Admin : Post /api/admin/login (self made) :-
+
+To login the admin. using username and password
+
+
+
+ 
+    "name": "string",
+    "email": "string",
+    "jobRole":"string",
+    "phoneNo":"Number",
+    "address": "string",
+    "age": "Number",
+    "password": "string"
+
+    {
+    "name": "abc",
+    "email": "abc@gmail.com",
+    "jobRole":"string",
+    "phoneNo":87654,
+    "address": "string",
+    "age": 45,
+    "password": "password"
+}
+
+
+
+{
+  "name": "Mohan",
+  "email": "mohan@gmail.com",
+  "unitNumber": "567",
+  "serviceType": "Pest",
+  "summary": "everything is not going well",
+  "details": "no more details"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Form gets filled and is a http request is made to submit to api.###############3 After that a landing page is shown.
+
+2. Login and register page for admin.
+3. in the account section admin sees all the requests and he can close any task. 

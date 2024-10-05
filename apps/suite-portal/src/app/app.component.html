@@ -2,8 +2,15 @@
   <mat-label>Resident Portal</mat-label>
   <a mat-button [routerLink]="'home'">Home</a>
   <div class="spacer"></div>
-  <a class="admin" mat-button [routerLink]="'admin'">Admin</a>
+  <a class="admin" mat-button [matMenuTriggerFor]="menu">{{service.isAdminLoggedin?'Hi '+service.adminDetails.name+'! Dashboard':'Admin'}}</a>
 </mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <button [routerLink]="'admin-login'" mat-menu-item *ngIf="!service.isAdminLoggedin">Login</button>
+  <button [routerLink]="'admin-register'" mat-menu-item *ngIf="!service.isAdminLoggedin">Register</button>
+  <button [routerLink]="'admin-dashboard'" mat-menu-item *ngIf="service.isAdminLoggedin">Dashboard</button>
+  <button mat-menu-item *ngIf="service.isAdminLoggedin" (click)="adminLogout()">Logout</button>
+</mat-menu>
 
 <main>
   <router-outlet></router-outlet>

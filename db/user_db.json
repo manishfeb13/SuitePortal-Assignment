@@ -1,0 +1,144 @@
+{
+  "auths": [
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "jobRole": "string",
+      "phoneNo": 87654,
+      "address": "string",
+      "age": 45,
+      "password": "password",
+      "id": "9KKrGlZb0K"
+    },
+    {
+      "name": "Anand",
+      "email": "anand@gmail.com",
+      "jobRole": "Director",
+      "phoneNo": 87676565,
+      "address": "H.no 443g",
+      "age": 35,
+      "password": "anand123",
+      "id": "kFN4XtuTt6"
+    },
+    {
+      "name": "Manish",
+      "email": "manishfeb13@gmail.com",
+      "jobRole": "",
+      "phoneNo": 7206935443,
+      "address": "H.no-1156/8,Savitri Sadan,Near Soni School,",
+      "age": 53,
+      "password": "m",
+      "id": "sA89HD0ChI"
+    },
+    {
+      "name": "Manish",
+      "email": "manb13@gmail.com",
+      "jobRole": "",
+      "phoneNo": 7206935443,
+      "address": "H.no-1156/8,Savitri Sadan,Near Soni School,",
+      "age": 53,
+      "password": "manish",
+      "id": "yvBW3yMDrX"
+    },
+    {
+      "name": "Manish Saini",
+      "email": "654df3@gmail.com",
+      "jobRole": "",
+      "phoneNo": 7206935443,
+      "address": "H.no-1156/8,Savitri Sadan,Near Soni School,",
+      "age": 54,
+      "password": "",
+      "id": "esfrA_Asju"
+    },
+    {
+      "name": "",
+      "email": "",
+      "jobRole": "",
+      "phoneNo": "",
+      "address": "",
+      "age": "",
+      "password": "",
+      "id": "Qtq3X_npkL"
+    },
+    {
+      "name": "Manish Saini",
+      "email": "abc3@gmail.com",
+      "jobRole": "",
+      "phoneNo": 7206935443,
+      "address": "H.no-1156/8,Savitri Sadan,Near Soni School,",
+      "age": 54,
+      "password": "password",
+      "id": "PhNR9aKjFm"
+    },
+    {
+      "name": "tinku",
+      "email": "tinku",
+      "jobRole": "",
+      "phoneNo": "",
+      "address": "",
+      "age": "",
+      "password": "",
+      "id": "hZmKR0oLdh"
+    },
+    {
+      "name": "Martin",
+      "email": "martin@gmail.com",
+      "jobRole": "Sweeper",
+      "phoneNo": 765432,
+      "address": "Roadside",
+      "age": 45,
+      "password": "password",
+      "id": "QovC5Lfdq2"
+    },
+    {
+      "name": "John",
+      "email": "john@gmail.com",
+      "jobRole": "Security",
+      "phoneNo": 345678765,
+      "address": "Main Gate",
+      "age": 29,
+      "password": "password",
+      "id": "9Pe2kqA5x5"
+    },
+    {
+      "name": "Shyam",
+      "email": "shyam@s.com",
+      "jobRole": "Senior Manager",
+      "phoneNo": 987339346,
+      "address": "Room No 3a, Tower H, Residents House",
+      "age": 48,
+      "password": "abc",
+      "id": "FvhONC1Vmr"
+    },
+    {
+      "name": "as",
+      "email": "shyam@s.comfd",
+      "jobRole": "no role",
+      "phoneNo": 654,
+      "address": "vfcds",
+      "age": 43,
+      "password": "abc",
+      "id": "8ZTi1OdKoA"
+    },
+    {
+      "name": "Mark Twain",
+      "email": "Mark@abc.com",
+      "jobRole": "Technician",
+      "phoneNo": 45678433,
+      "address": "Room - 43A, Tower H, Johnson's Park",
+      "age": 41,
+      "password": "abc",
+      "id": "O3w7hRdSnn"
+    },
+    {
+      "name": "Kartik Kumar",
+      "email": "kk@s.com",
+      "jobRole": "Supervisor cum Technician",
+      "phoneNo": 7654568654,
+      "address": "Room No - 653A, Tower H, Ajnara Heritage",
+      "age": 47,
+      "password": "abc",
+      "id": "cY1wqBWi7x"
+    }
+  ]
+}

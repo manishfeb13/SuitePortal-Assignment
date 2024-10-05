@@ -1,0 +1,77 @@
+
+
+<div class="page">
+
+<div class="adminDetails">
+
+    <h2>Admin Dashboards</h2>
+
+    <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Hello {{service.adminDetails.name}}!</mat-card-title>
+          <mat-card-subtitle>Designation: {{service.adminDetails.jobRole}}</mat-card-subtitle>
+        </mat-card-header>
+        <div >
+        <div><img class="admin_dp" mat-card-md-image mat-card-image src="https://st.depositphotos.com/2101611/3923/v/450/depositphotos_39238767-stock-illustration-businessman-avatar-profile-picture.jpg" ></div>
+    </div>
+        <mat-card-content>
+         <p><mat-card-subtitle>Age: {{service.adminDetails.age}}</mat-card-subtitle></p>
+    <p><mat-card-subtitle>Contact: {{service.adminDetails.phoneNo}}</mat-card-subtitle></p>
+    <p><mat-card-subtitle>Email: {{service.adminDetails.email}}</mat-card-subtitle></p>
+    <p><mat-card-subtitle>Address: {{service.adminDetails.address}}</mat-card-subtitle></p>
+    <button mat-raised-button color="accent" (click)="adminLogout()">Logout</button>
+        </mat-card-content>
+      </mat-card>
+    
+    
+</div>
+
+<div style="margin-left: 12px;"><h2>Pending Requests</h2>
+
+<div class="mainFlex">
+
+    
+
+<div *ngFor="let item of allMaintainenceRequest.reverse()">
+
+    <mat-card class="mainCard" appearance="outlined" >
+        <div [ngClass]="{'resolvedClass':item.resolutionState.isResolved, 'unresolvedClass': !item.resolutionState.isResolved}">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image">
+            <button mat-icon-button>
+                <mat-icon>{{serviceTypeIcon[item.serviceType]}}</mat-icon></button>
+          </div>
+          <mat-card-title >
+            <div class="flex">
+            <div class="title">{{item.serviceType | titlecase}} - {{item.resolutionState.isResolved?'Resolved':'Pending'}}</div>
+        </div>
+          </mat-card-title>
+          <mat-card-subtitle>Requested on: {{item.submittedAt | date}}</mat-card-subtitle>
+        </mat-card-header>
+        
+        <mat-card-content>
+            <div class="content">
+          <p><b>Requested By:</b> {{item.name}}</p>
+          <p><b>Email:</b> {{item.email}}</p>
+          <p><b>Flat No:</b> {{item.unitNumber}}</p>
+          <p><b>Requested Service:</b> {{item.serviceType|titlecase}}</p>
+          <p><b>Description:</b> {{item.summary}}</p>
+          <p><b>Remaining Details (if any):</b> {{item.details}}</p>
+          <br>
+          <p><b>Last Marked by Admin: </b>{{item.resolutionState.byAdmin.name === undefined ?'Never Marked': item.resolutionState.byAdmin.name}}</p>
+          <br>
+        </div>
+        </mat-card-content>
+        <mat-card-actions class="flex2">
+            <button mat-raised-button color="accent" (click)="toggleResolutionState(item.id)">
+                {{item.resolutionState.isResolved?'Mark as Pending':'Mark as Resolved'}}
+              </button>
+          <!-- <button mat-button>SHARE</button> -->
+        </mat-card-actions>
+        </div>
+      </mat-card>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,23 @@
+.flex-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    text-align: center;
+    
+}
+
+p{
+    text-align: center;
+    
+}
+
+.border{
+    border-top: 28px solid #e66317;
+    border-left: 28px solid #e66317;
+    border-radius: 45px;
+    padding: 35px;
+}

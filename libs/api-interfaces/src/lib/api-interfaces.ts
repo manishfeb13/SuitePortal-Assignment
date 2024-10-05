@@ -25,5 +25,6 @@ export interface MaintenanceRequest {
   summary: string;
   // Any extra details
   details?: string;
+ 
 }
 

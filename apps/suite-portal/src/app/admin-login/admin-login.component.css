@@ -1,0 +1,26 @@
+:host {
+    form.maint-form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  .flex{
+    display: flex;
+    flex-direction: row;
+  }
+
+  i{
+    cursor: pointer;
+  }
+
+  a{
+    margin: 16px 16px 0 0;
+    text-decoration: none; 
+  
+  }
+
+  a:visited{
+    color: gray;
+  }
